@@ -3,20 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		41252FA5238B48B908637DD6 /* Pods_CellDelDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7194138339F5B3A34EDB060 /* Pods_CellDelDemo.framework */; };
 		920A69AC2428888D80FD9A52 /* Pods_CellDelDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678C2254D43CD45A54EBBBC0 /* Pods_CellDelDemoTests.framework */; };
 		F90F3DDE24AB06860077D9A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DDD24AB06860077D9A6 /* AppDelegate.m */; };
-		F90F3DE124AB06860077D9A6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DE024AB06860077D9A6 /* SceneDelegate.m */; };
 		F90F3DE424AB06860077D9A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DE324AB06860077D9A6 /* ViewController.m */; };
 		F90F3DE724AB06860077D9A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F3DE524AB06860077D9A6 /* Main.storyboard */; };
 		F90F3DE924AB068A0077D9A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90F3DE824AB068A0077D9A6 /* Assets.xcassets */; };
 		F90F3DEC24AB068A0077D9A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F3DEA24AB068A0077D9A6 /* LaunchScreen.storyboard */; };
 		F90F3DEF24AB068A0077D9A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DEE24AB068A0077D9A6 /* main.m */; };
 		F90F3DF924AB068B0077D9A6 /* CellDelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DF824AB068B0077D9A6 /* CellDelDemoTests.m */; };
+		F95309E624AB46E900417E69 /* CelldelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95309E524AB46E900417E69 /* CelldelCell.m */; };
+		F95309EA24AB484300417E69 /* CellDelButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F95309E924AB484300417E69 /* CellDelButtonItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,10 @@
 		F90F3DF424AB068B0077D9A6 /* CellDelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellDelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90F3DF824AB068B0077D9A6 /* CellDelDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellDelDemoTests.m; sourceTree = "<group>"; };
 		F90F3DFA24AB068B0077D9A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95309E424AB46E900417E69 /* CelldelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CelldelCell.h; sourceTree = "<group>"; };
+		F95309E524AB46E900417E69 /* CelldelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelldelCell.m; sourceTree = "<group>"; };
+		F95309E824AB484300417E69 /* CellDelButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDelButtonItem.h; sourceTree = "<group>"; };
+		F95309E924AB484300417E69 /* CellDelButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDelButtonItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +86,6 @@
 				A8EA213120511A05AB9E2808 /* Pods-CellDelDemoTests.debug.xcconfig */,
 				198D7B1A7B69558C8091D1CB /* Pods-CellDelDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -117,6 +121,7 @@
 		F90F3DDB24AB06860077D9A6 /* CellDelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F95309E724AB482B00417E69 /* VIew */,
 				F90F3DDC24AB06860077D9A6 /* AppDelegate.h */,
 				F90F3DDD24AB06860077D9A6 /* AppDelegate.m */,
 				F90F3DDF24AB06860077D9A6 /* SceneDelegate.h */,
@@ -139,6 +144,17 @@
 				F90F3DFA24AB068B0077D9A6 /* Info.plist */,
 			);
 			path = CellDelDemoTests;
+			sourceTree = "<group>";
+		};
+		F95309E724AB482B00417E69 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				F95309E824AB484300417E69 /* CellDelButtonItem.h */,
+				F95309E924AB484300417E69 /* CellDelButtonItem.m */,
+				F95309E424AB46E900417E69 /* CelldelCell.h */,
+				F95309E524AB46E900417E69 /* CelldelCell.m */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +326,9 @@
 			files = (
 				F90F3DE424AB06860077D9A6 /* ViewController.m in Sources */,
 				F90F3DDE24AB06860077D9A6 /* AppDelegate.m in Sources */,
+				F95309EA24AB484300417E69 /* CellDelButtonItem.m in Sources */,
+				F95309E624AB46E900417E69 /* CelldelCell.m in Sources */,
 				F90F3DEF24AB068A0077D9A6 /* main.m in Sources */,
-				F90F3DE124AB06860077D9A6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

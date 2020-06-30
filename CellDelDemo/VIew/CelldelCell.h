@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CelldelCell.h
 //  CellDelDemo
 //
 //  Created by jhmac on 2020/6/30.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface CelldelCell : UITableViewCell
 
 @end
 
+NS_ASSUME_NONNULL_END

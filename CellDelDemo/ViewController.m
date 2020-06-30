@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "CelldelCell.h"
+//#import <Masonry/Masonry.h>
 
-@interface ViewController ()
-@property (strong, nonatomic) UITableView *tableView;
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController
@@ -17,17 +20,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.tableView registerClass:[CelldelCell class] forCellReuseIdentifier:@"CelldelCell"];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+#pragma mark - UITableView Datasource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"CelldelCell";
+    
+//    CelldelCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+//    if(cell == nil) {
+    CelldelCell * cell = [[CelldelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+//    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
+    
+    return cell;
+}
+
+#pragma mark - UITableView Delegate methods
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
 }
 
-
-
--(UITableView *)tableView
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!_tableView) {
-        _tableView = [UITableView new];
-    }
-    return _tableView;
-}
+    return @"删除";
+//    return @"通过改变title的长度，你想多宽就多宽";
 
+}
 @end
