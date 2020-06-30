@@ -1,0 +1,6 @@
+framework module Pods_CellDelDemoTests {
+  umbrella header "Pods-CellDelDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

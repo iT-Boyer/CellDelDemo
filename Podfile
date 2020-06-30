@@ -6,7 +6,7 @@ target 'CellDelDemo' do
   use_frameworks!
 
   # Pods for CellDelDemo
-
+  pod 'Masonry'
   target 'CellDelDemoTests' do
     inherit! :search_paths
     # Pods for testing
