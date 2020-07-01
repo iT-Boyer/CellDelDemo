@@ -18,9 +18,14 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self=[super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        if (!_deleteView) {
-            [self deleteView];
+        NSString *version = [UIDevice currentDevice].systemVersion;
+        if (version.doubleValue >= 13.0) {
+            // 针对 13.0 以上的iOS系统进行处理
+            if (!_deleteView) {
+                [self deleteView];
+            }
         }
+        
     }
     return self;
 }
