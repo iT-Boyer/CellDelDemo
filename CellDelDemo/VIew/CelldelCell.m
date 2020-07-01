@@ -29,15 +29,15 @@
 {
     if (!_deleteView) {
         CGFloat screenw = [UIScreen mainScreen].bounds.size.width;
-        _deleteView = [[UIView alloc]initWithFrame:CGRectMake(screenw, 0, screenw, 100)];
+        _deleteView = [[UIView alloc]initWithFrame:CGRectMake(screenw, 0, screenw, 50)];
         _deleteView.backgroundColor = [UIColor whiteColor];
          [self addSubview:_deleteView];
         //ButtonItem是我自己定义的一个控件，"icon_delete"是删除按钮的图片
-        CellDelButtonItem *deleteBtn = [[CellDelButtonItem alloc] initWithFrame:CGRectMake(0, 0, 80, 100)
+        CellDelButtonItem *deleteBtn = [[CellDelButtonItem alloc] initWithFrame:CGRectMake(0, 0, 80, 50)
                                                                   WithImageName:@"timedel"
                                                                  WithImageWidth:48
                                                    WithImageHeightPercentInItem:.7
-                                                                      WithTitle:NSLocalizedString(@"DeleteOrder", nil)
+                                                                      WithTitle:NSLocalizedString(@"", nil)
                                                                    WithFontSize:14
                                                                   WithFontColor:[UIColor blackColor]
                                                                         WithGap:-5];

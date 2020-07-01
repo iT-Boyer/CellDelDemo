@@ -18,6 +18,7 @@
 		F90F3DF924AB068B0077D9A6 /* CellDelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DF824AB068B0077D9A6 /* CellDelDemoTests.m */; };
 		F95309E624AB46E900417E69 /* CelldelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95309E524AB46E900417E69 /* CelldelCell.m */; };
 		F95309EA24AB484300417E69 /* CellDelButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F95309E924AB484300417E69 /* CellDelButtonItem.m */; };
+		F9530AD924AC1F6800417E69 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F90F3DE024AB06860077D9A6 /* SceneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F95309E524AB46E900417E69 /* CelldelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelldelCell.m; sourceTree = "<group>"; };
 		F95309E824AB484300417E69 /* CellDelButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDelButtonItem.h; sourceTree = "<group>"; };
 		F95309E924AB484300417E69 /* CellDelButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDelButtonItem.m; sourceTree = "<group>"; };
+		F9530ADA24AC2DB400417E69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		F90F3DD024AB06860077D9A6 = {
 			isa = PBXGroup;
 			children = (
+				F9530ADA24AC2DB400417E69 /* README.md */,
 				F90F3DDB24AB06860077D9A6 /* CellDelDemo */,
 				F90F3DF724AB068B0077D9A6 /* CellDelDemoTests */,
 				F90F3DDA24AB06860077D9A6 /* Products */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F90F3DE424AB06860077D9A6 /* ViewController.m in Sources */,
+				F9530AD924AC1F6800417E69 /* SceneDelegate.m in Sources */,
 				F90F3DDE24AB06860077D9A6 /* AppDelegate.m in Sources */,
 				F95309EA24AB484300417E69 /* CellDelButtonItem.m in Sources */,
 				F95309E624AB46E900417E69 /* CelldelCell.m in Sources */,
@@ -487,7 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CellDelDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,7 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CellDelDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
